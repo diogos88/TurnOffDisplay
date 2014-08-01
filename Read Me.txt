@@ -1,0 +1,24 @@
+Start and Stop will be raised in a range of +/- the value of check value.
+It depends when the applications starts.
+
+ex. if the check value are set to 10 minutes and the app start at 12:00:00 PM then 
+if it's suppose to stop at 02:00:00 PM, in reallity it will stop at 02:03:00 PM.
+
+
+-----------------------------------------
+| start                | hh:mm:ss AM/PM |
+-----------------------------------------
+| stop                 | hh:mm:ss AM/PM |
+-----------------------------------------
+| check each minute(s) |            int |
+-----------------------------------------
+| Minimize all windows |           bool |
+-----------------------------------------
+
+
+Settigs.ini exemple:
+
+07:00:00 AM
+08:00:00 PM
+1
+true
